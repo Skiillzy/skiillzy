@@ -114,7 +114,7 @@ function App() {
           </p>
           <div className="flex justify-center space-x-4">
             <button className="px-8 py-4 bg-primary-dark text-text-dark rounded-md hover:bg-accent-dark font-semibold retro-text tracking-wide retro-shadow">
-              aaaahhhhh
+              Priyansh
             </button>
             <button className="px-8 py-4 border border-accent-light dark:border-accent-dark rounded-md hover:border-primary-dark dark:hover:border-primary-dark font-semibold retro-text tracking-wide retro-shadow">
               Enterprise trial
