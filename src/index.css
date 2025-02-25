@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply antialiased transition-colors duration-200;
+  }
+
+  h1, h2, h3, h4, h5, h6, .retro-text {
+    font-family: 'VT323', monospace;
+    letter-spacing: 0.05em;
+  }
+
+  .dark {
+    @apply bg-secondary-dark text-text-dark;
+  }
+
+  :root {
+    @apply bg-primary-light text-text-light;
+  }
+}
+
+@layer components {
+  .retro-shadow {
+    @apply dark:shadow-accent-dark shadow-accent-light;
+    box-shadow: 6px 6px 0px;
+  }
+
+  .theme-toggle {
+    @apply p-2 rounded-full transition-colors duration-200
+           hover:bg-accent-light dark:hover:bg-accent-dark
+           text-text-light dark:text-text-dark;
+  }
+}
+
+@keyframes cursor-blink {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
